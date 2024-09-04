@@ -1,0 +1,57 @@
+/* Genel ayarlar */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hesap makinesi tasarımı */
+.calculator {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-spacing: 25px;
+}
+
+/* Girdi ve butonlar */
+.calculator input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5em;
+    text-align: right;
+    background-color: #444;
+    color: white;
+}
+
+.calculator button, 
+.calculator input[type="button"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+.calculator button:hover, 
+.calculator input[type="button"]:hover {
+    background-color: #555;
+}
+
+/* 'C' butonu farklı renkte olsun */
+.calculator input[type="button"] {
+    background-color: #f44336;
+}
+
+.calculator input[type="button"]:hover {
+    background-color: #e53935;
+}
